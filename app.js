@@ -57,5 +57,5 @@ console.log('Highly Rated:', highlyRated);
 
 highlyRated.forEach((highlyRated) => console.log('Highly Rated:', highlyRated.name));
 
-const affordableProducts = products.filter(product => product.price < 1000);
-affordableProducts.forEach((affordableProducts) => console.log('Affordable electronics:' , affordableProducts));
+const affordableElectronics = products.filter(product => (product.price < 1000 && product.category === 'Electronics'));
+affordableElectronics.forEach((affordableElectronics) => console.log('Affordable electronics:' , affordableElectronics));
